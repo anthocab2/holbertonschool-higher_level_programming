@@ -1,0 +1,1 @@
+This project aims to strengthen your understanding of Python modules, functions, and command line arguments
