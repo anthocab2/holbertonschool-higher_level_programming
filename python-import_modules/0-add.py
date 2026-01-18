@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Import the add function from add_0.py and print a + b = result"""
+"""Import add function from add_0.py and use it"""
 
 from add_0 import add
 
