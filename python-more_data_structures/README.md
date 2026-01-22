@@ -1,0 +1,1 @@
+This project contains Python functions for manipulating more complex data structures such as matrices (lists of lists). The goal of this task is to practice using loops, list comprehensions, and basic Python operations without importing additional modules.
