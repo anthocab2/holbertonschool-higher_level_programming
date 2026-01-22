@@ -1,0 +1,1 @@
+This directory contains projects and tasks related to Python data structures, mainly lists and tuples, as part of the Holberton School curriculum.
