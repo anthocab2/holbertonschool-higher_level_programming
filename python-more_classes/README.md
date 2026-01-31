@@ -1,0 +1,1 @@
+This project covers Object-Oriented Programming (OOP) concepts in Python.
