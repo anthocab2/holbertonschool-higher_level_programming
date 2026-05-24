@@ -10,7 +10,7 @@ The goal of this project is to practice conditional statements, loops, functions
 
 By the end of this project, I should be able to explain:
 
-- Why indentation is important in Python
+- Why indentation is important in Python.
 - How to use `if`, `if...else`, and `elif`
 - How to use comments
 - How to assign values to variables
