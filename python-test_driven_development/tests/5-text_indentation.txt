@@ -1,0 +1,52 @@
+The ``5-text_indentation`` module
+=================================
+
+Import the function:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Basic example:
+
+    >>> text_indentation("Hello. How are you?")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+
+Colon example:
+
+    >>> text_indentation("Python: awesome")
+    Python:
+    <BLANKLINE>
+    awesome
+
+Multiple separators:
+
+    >>> text_indentation("A. B? C:")
+    A.
+    <BLANKLINE>
+    B?
+    <BLANKLINE>
+    C:
+    <BLANKLINE>
+
+Leading spaces after separator:
+
+    >>> text_indentation("Hello.    World")
+    Hello.
+    <BLANKLINE>
+    World
+
+Wrong type:
+
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+None value:
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
