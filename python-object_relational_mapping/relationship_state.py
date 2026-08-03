@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Relationship State model"""
+"""Defines the State class and Base"""
+
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import relationship
-from model_state import Base
+from sqlalchemy.orm import relationship, declarative_base
+
+Base = declarative_base()
 
 
 class State(Base):
@@ -15,5 +17,5 @@ class State(Base):
     cities = relationship(
         "City",
         back_populates="state",
-        cascade="all, delete, delete-orphan"
+        cascade="all, delete"
     )
