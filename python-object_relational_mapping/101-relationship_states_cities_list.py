@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all states and their cities"""
+"""Lists all states and cities from a database"""
 
 import sys
 from sqlalchemy import create_engine
@@ -24,7 +24,8 @@ if __name__ == "__main__":
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
-        for city in sorted(state.cities, key=lambda c: c.id):
-            print("\t{}: {}".format(city.id, city.name))
+
+        for city in state.cities:
+            print("{}: {}".format(city.id, city.name))
 
     session.close()
